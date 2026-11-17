@@ -8,9 +8,6 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
     $('.play-button').click(clickedPlayButton);
     $('.exercise-button').click(clickedExerciseButton);
     $('.groom-button').click(clickedGroomButton);
-  
-
-  
     
   })
   
@@ -95,7 +92,6 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
       // // .attr('src', value) sets an HTML attribute on an element. The first argument is the attribute name ('src', the image file path) and the second is the new value. I use it to swap between sadPet, angryPet, and happyPet depending on the pet's stats.
       
       // The pet is angry if happiness is low OR cleanliness is low, the pet is only happy when both stats are above the minimum amounts.
-  // (your .attr() explanation goes here)
       if (pet_info.weight >= 20) {
         $('.pet-image').attr('src', 'images/sadPet.png');
       } else if (pet_info.happiness < 2 || pet_info.cleanliness == 0 || pet_info.weight == 0) {
